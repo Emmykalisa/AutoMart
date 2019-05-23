@@ -234,7 +234,6 @@ footer{
   text-align: center;
 }
 
-
 /*Specific vehicle view*/
 
 .single {
@@ -256,8 +255,6 @@ footer{
         width: 100%;
     }
 }
-
-
 /* Media Queries */
 @media(max-width: 768px){
   header #branding,
