@@ -234,6 +234,27 @@ footer{
   text-align: center;
 }
 
+/*Specific vehicle view*/
+
+.single {
+        border: 3px solid blue;
+        padding: 20px 40px 40px;
+        max-width: 640px;
+        margin:0 auto;
+    }
+.single__image {
+    display: inline-block;
+    vertical-align: top;
+    width: 46%;
+    margin: 20px 30px 0 0;
+}
+.single__text {
+    display: inline-block;
+    width: 46%;
+    @media (max-width: 620px) {
+        width: 100%;
+    }
+}
 /* Media Queries */
 @media(max-width: 768px){
   header #branding,
