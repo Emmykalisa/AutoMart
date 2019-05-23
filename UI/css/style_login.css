@@ -2,6 +2,7 @@ body{
 	margin: 0;
 	padding: 0;
 	background-image: url(../imgs/25.jpg);
+	/* background-color: rebeccapurple; */
 	-webkit-background-size: cover;
 	background-size: cover;
 	font-family: Tahoma, sans-serif;

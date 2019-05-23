@@ -248,6 +248,13 @@ footer{
     width: 46%;
     margin: 20px 30px 0 0;
 }
+.single__text button{
+  width: 100px;
+  height: 40px;
+  background-color: red;
+  float: right;
+  border-radius: 10px;
+}
 .single__text {
     display: inline-block;
     width: 46%;
