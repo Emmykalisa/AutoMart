@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Auto Mart</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../css/style_cart.css" media="screen" type="text/css" />
+</head>
+
+<body>
+
+<div id="site">
+	<div id="content">
+		<h1>Your Shopping Cart</h1>
+		<form id="shopping-cart" action="cart.html" method="post">
+			<table class="shopping-cart">
+			  <thead>
+				<tr>
+					<th scope="col">Item</th>
+					<th scope="col">Qty</th>
+					<th scope="col" colspan="2">Price</th>
+				</tr>
+			  </thead>
+			  <tbody>
+			  	<tr>
+			  		<td>Benz</td>
+			  		<td>1</td>
+			  		<td><input type="text"   placeholder="1500" /></td>
+			  	</tr>
+			  	<tr>
+			  		<td>Carina</td>
+			  		<td>2</td>
+			  		<td><input type="text"   placeholder="4000" /></td>
+			  	</tr>
+			  
+			  </tbody>
+			</table>
+			<p id="sub-total">
+				<strong>Sub Total</strong>: <span id="stotal"></span>
+			</p>
+			<ul id="shopping-cart-actions">
+				<li>
+					<a href="#" class="btn">Update Cart</a>
+				</li>
+				<!-- <li>
+					<input type="submit" name="delete" id="empty-cart" class="btn" value="Empty Cart" />
+				</li> -->
+				<li>
+					<a href="../index.html" class="btn">Continue Shopping</a>
+				</li>
+				<li>
+					<a href="#" class="btn">Go To Checkout</a>
+				</li>
+			</ul>
+		</form>
+	</div>
+	
+	
+
+</div>
+
+<footer id="site-info">
+		Emmanuel KALISA &copy; Winery
+	</footer>
+
+</body>
+</html>	
