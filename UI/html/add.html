@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+  	<meta name="author" content="Emmy KALISA">
+    <title>Auto Mart</title>
+    <link rel="stylesheet" href="../css/add.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1>Auto Mart App</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="dashboard_seller.html">Home</a></li>
+            <li class="current"><a href="add.html">Add ads</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="boxes">
+      <div class="container">
+            <div>
+                    <form>
+                      <label for="owner">Owner's names</label>
+                      <input type="text" id="owner" name="firownerstname" placeholder="Vehicle's owner..">
+                  
+                      <label for="manufacturer">Manufacturer</label>
+                      <input type="text" id="manufacturer" name="manufacturer" placeholder="Its manufacturer..">
+                      
+                      <label for="model">Model</label>
+                      <input type="text" id="owner" name="firownerstname" placeholder="Its model..">
+                      
+                      <label for="price">Price</label>
+                      <input type="text" id="owner" name="firownerstname" placeholder="Its price..">
+                  
+                      <label for="State">State</label>
+                      <select id="state" name="state">
+                        <option value="New">New</option>
+                        <option value="Used">Used</option>
+                      </select>
+                     
+                      <label for="Status">Status</label>
+                      <select id="status" name="status">
+                        <option value="Available">Available</option>
+                        <option value="Sold">Sold</option>
+                      </select>
+                     
+                      <label for="Type">Type</label>
+                      <select id="type" name="type">
+                        <option value="Car">Car</option>
+                        <option value="Truck">Truck</option>
+                        <option value="Trailer">Trailer</option>
+                        <option value="Van">Van</option>
+                      </select>
+
+                      <label for="description">Description</label>
+                      <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                      
+                      <label for="picture">Picture</label>
+                      <input type="file" id="picture" name="picture">
+                    
+                      <input type="submit" value="Submit">
+                    </form>
+                  </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Emmanuel KALISA, Copyright &copy; 2019</p>
+    </footer>
+  </body>
+</html>
