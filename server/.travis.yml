@@ -5,9 +5,32 @@ node_js:
 cache:
   directories:
     - "node_modules"
+# blacklist
+branches:
+  except:
+    - gh-pages
+
+# whitelist
+branches:
+  only:
+    - develop
+    - ft-signup-server-166378858
+
 after_success: npm run coverage
 notification:
   email:false
 
-  repo_token: 3lyXTX0vslxACIMtMDQG7H4GivSFfPgRt
+  repo_token: ACAARhexZRcjcSuzsU9Azw
+  
+
+  bundler_args: --without debug
+script: "bundle exec rspec spec"
+before_install:
+  - "gem update --system"
+  - "gem install bundler"
+  - 'gem update --system --conservative || (gem i "rubygems-update:~>2.7" --no-document && update_rubygems)'
+  - 'gem update bundler --conservative'
+env:
+  - CI=true
+rvm:
   
