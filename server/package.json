@@ -1,0 +1,43 @@
+{
+  "name": "automart",
+  "version": "1.0.0",
+  "description": "Auto Mart is an online marketplace for automobiles of diverse makes,model or body type",
+  "main": "server.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "babel server.js --out-dir build",
+    "start": "babel-watch server.js",
+    "test": "nyc mocha tests/*.js --require @babel/register --exit",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "author": "Emmanuel kalisa",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.0.1",
+    "chai-http": "^4.3.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.16.1",
+    "express-validator": "^5.3.1",
+    "moment": "^2.24.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-watch": "^7.0.0",
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.3",
+    "mocha": "^6.1.4",
+    "mocha-lcov-reporter": "^1.3.0",
+    "nyc": "^14.1.1",
+    "supertest": "^4.0.2"
+  }
+}
