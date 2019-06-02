@@ -5,23 +5,23 @@ node_js:
 cache:
   directories:
     - "node_modules"
-# blacklist
-branches:
-  except:
-    - gh-pages
+# # blacklist
+# branches:
+#   except:
+#     - gh-pages
 
-# whitelist
-branches:
-  only:
-    - develop
-    - ft-signup-server-166378858
+# # whitelist
+# branches:
+#   only:
+#     - develop
+#     - ft-signup-server-166378858
 
 after_success: npm run coverage
 notification:
   email:false
 
-  repo_token: ACAARhexZRcjcSuzsU9Azw
-  
+  repo_token: 3lyXTX0vslxACIMtMDQG7H4GivSFfPgRt
+  # ACAARhexZRcjcSuzsU9Azw
 
   bundler_args: --without debug
 script: "bundle exec rspec spec"
