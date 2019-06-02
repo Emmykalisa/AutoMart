@@ -1,0 +1,13 @@
+sudo: false
+language: node_js
+node_js: 
+  - "stable"
+cache:
+  directories:
+    - "node_modules"
+after_success: npm run coverage
+notification:
+  email:false
+
+  repo_token: 3lyXTX0vslxACIMtMDQG7H4GivSFfPgRt
+  
